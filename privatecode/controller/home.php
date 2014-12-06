@@ -1,11 +1,13 @@
-<?
+<?php
 /*******************
 
  * Default controller
  *********************/
 
-require_once('../includes/helper.php');
+$path = __DIR__ . '/../includes/helper.php'; 
 
+
+require_once($path);
 if (isset($_SESSION['userid']))
 	render('home');
 else

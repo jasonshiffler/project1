@@ -6,8 +6,10 @@
  * Login controller
  *******************/
 
-require_once('../model/model.php');
-require_once('../includes/helper.php');
+$path=__DIR__;
+
+require_once($path.'/../model/model.php');
+require_once($path.'/../includes/helper.php');
 
 if (isset($_POST['email']) &&
 	isset($_POST['password']))
@@ -30,6 +32,8 @@ if (isset($_POST['email']) &&
 }
 else
 {
-	render('login');
+
+echo 'hello';
+//	render('login');
 }
 ?>

@@ -13,8 +13,13 @@ if (isset($_GET["page"]))
 else
 	$page = "home";
 
-$path = __DIR__ . '/../privatecode/controller/' . $page . '.php';
+$path = __DIR__ . '/privatecode/controller/' . $page . '.php';
 if (file_exists($path))
-	require($path);
-
+       {
+        require($path);
+       }
+else
+      {
+       echo 'file does not exist';
+      }
 ?>

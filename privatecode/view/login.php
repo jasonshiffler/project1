@@ -1,5 +1,7 @@
 <?php
-require_once('../includes/helper.php');
+
+$path = __DIR__ . '/../includes/helper.php';
+require_once($path);
 render('header', array('title' => 'C$75 Finance'));
 ?>
 
